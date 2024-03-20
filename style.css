@@ -15,12 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url(lake.jpg) no-repeat;
 }
 
 .speaker-form-header {
     text-align: center;
-    background-color: #F28585;
-    border: 1px solid #D6D9DC;
+    background-color: #87cff8;
+    border: 1px solid #cfe5ee;
     border-radius: 3px;
     
     width: 80%;
@@ -34,14 +35,13 @@ body {
 }
 
 .speaker-form {
-    background-color: #F28585;
+    background-color: #87cff8;
     border:  1px solid #D6D9DC;
     border-radius: 3px;
 
     width: 80%;
-    padding: 50px;
+    padding: 60px;
     margin: 0 0 40px 0;
-
 }
 
 .form-row {
@@ -68,6 +68,72 @@ body {
     margin-bottom: 15px;
 }
 
+.form-row .instructions {   color: #5f8de2;   font-size: 14px;   margin-bottom: 30px; 
+} 
+
+.form-row .instructions { 
+    margin-left: 150px; 
+  } 
+
+.form-row .checkbox-label { 
+    margin-bottom: 0; 
+  } 
+
+.form-row .checkbox-label {     margin-left: 97px; 
+    width: auto; 
+  } 
+
+.legacy-form-row {
+    border: none; 
+}
+
+.legacy-form-row legend{
+    float: left;
+    margin-left: 30px;
+}
+
+.legacy-form-row input[type="radio"] {
+    margin-top: 2px;
+}
+
+.legacy-form-row input[type="radio"] {
+    margin-left: 30px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+    box-shadow: none;
+}
+
+.form-row select {
+    width: 70%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.legacy-form-row {
+    border: none;
+    margin-bottom: 40px;
+}
+
+.legacy-form-row legend {
+    margin-bottom: 5px;
+}
+
+.legacy-form-row .radio-label {
+    display: block;
+    font-size: 14px;
+    padding: 0 20px 0 10px;
+}
+.legacy-form-row input[type="radio"] {
+    margin-top: 2x;
+}
+
+.form-row label {
+    margin-right: 10px;}
+
 @media only screen and (min-width: 700px) {
     .speaker-form-header,
     .speaker-form {
@@ -90,14 +156,8 @@ body {
     }
     .form-row label {
         text-align: right;
-        width: 120px;
+        width: 135px;
         padding-right: 20px;
     }
 }
 
-.form-row input[type='text']:invalid,
-.form-row input[type='email']:invalid {
-    border: 1px solid #D55C5F;
-    color: #D55C5F;
-    box-shadow: none;
-}
